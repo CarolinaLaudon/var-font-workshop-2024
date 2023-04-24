@@ -1,0 +1,56 @@
+/* Variable Cheatsheet by Carolina Laudon 2023*/
+/* Self-hosting variable fonts in your local root folder */
+@font-face {
+  font-family: 'Recursive-VariableFont';
+  src: url('Recursive-VariableFont_CASL,CRSV,MONO,slnt,wght.ttf') format('truetype');
+}
+
+.recursive{
+  color:rgb(12, 11, 12);
+  font-family: 'Recursive-VariableFont', sans-serif;
+  font-size: 2rem;
+}
+
+/* Current five standard axes a font can include*/
+/* Weight, to control lightness and boldness */
+.wght {
+  font-variation-settings: 'wght' 100;
+}
+
+/* Width, to control overall letter width */
+/* Import Archivo from Google Fonts API */
+.wdth {
+  font-family: 'Archivo', sans-serif;
+  font-variation-settings: 'wdth' 800;
+}
+
+/* Optical Size, to control adjustments for readability at various sizes */
+.opsz {
+  font-variation-settings: 'opsz' 1;
+}
+
+/* Italic, to switch between regular/italic */
+.ital {
+  font-variation-settings: 'ital' 1;
+}
+
+/* Slant, to control upright-to-slanted */
+.slnt {
+  font-variation-settings: 'slnt' -10;
+}
+
+/* Three custom axes specially for Recursive*/
+/* (Sans/proportional) */
+.mono {
+  font-variation-settings: 'MONO' 0;
+}
+
+/* (Linear/normal) */
+.casl {
+  font-variation-settings: 'CASL' 1;
+}
+
+/* (Roman/non-cursive lowercase) */
+.crsv {
+  font-variation-settings: 'CRSV' 1;
+}
